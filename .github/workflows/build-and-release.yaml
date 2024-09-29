@@ -17,7 +17,7 @@ jobs:
         env:
           MYSQL_ROOT_PASSWORD: password
           MYSQL_DATABASE: clickonova
-          MYSQL_USER: root
+          MYSQL_USER: admin
           MYSQL_PASSWORD: password
         options: >-
           --health-cmd="mysqladmin ping --silent"
@@ -48,7 +48,7 @@ jobs:
         run: mvn clean verify
         env:
           SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/clickonova
-          SPRING_DATASOURCE_USERNAME: root
+          SPRING_DATASOURCE_USERNAME: admin
           SPRING_DATASOURCE_PASSWORD: password
           SPRING_APP_JWTSECRET: UHVUYKk67t6t8SBF76bf7f0afdFUDHHFVHVHdfsd867868DBFfsdfFVUHBHD
           SPRING_APP_JWTEXPIRATIONMS: 86400000
